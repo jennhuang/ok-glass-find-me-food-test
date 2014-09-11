@@ -36,7 +36,7 @@ public class MenuActivity extends Activity {
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        openOptionsMenu();
+        //openOptionsMenu();
     }
 
     @Override
@@ -58,7 +58,7 @@ public class MenuActivity extends Activity {
 
                     @Override
                     public void run() {
-                        stopService(new Intent(MenuActivity.this, StopwatchService.class));
+                       stopService(new Intent(MenuActivity.this, StopwatchService.class));
                     }
                 });
                 return true;
